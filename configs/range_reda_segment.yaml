@@ -1,0 +1,51 @@
+dataset:
+  name: 'range'
+  train: 'train.csv'
+  val: 'val.csv'
+  test: 'test.csv'
+
+model:
+  name: 'reda_segment_range'
+  pretrain_model: 'esm150'
+  database_low:
+    path_dir: 'data/augmentation_database/range/low'
+    file_list:
+      - 'db-20.pt'
+      - 'db20-40.pt'
+      - 'db40-60.pt'
+      - 'db60-80.pt'
+      - 'db80-.pt'
+  database_high:
+    path_dir: 'data/augmentation_database/range/high'
+    file_list:
+      - 'db-40.pt'
+      - 'db40-60.pt'
+      - 'db60-80.pt'
+      - 'db80-100.pt'
+      - 'db100-.pt'
+  scales: 1
+  segment_lengths:
+    - 8
+    - 4
+  kernel_size: 5
+  attention_range: 5
+  embed_dim: 640
+  num_heads: 8
+  num_layers: 2
+  num_labels: 5
+
+training:
+  lr: 1e-4
+  num_epochs: 64
+  train_batch_size: 128
+  eval_batch_size: 128
+  weight_decay: 1e-4
+  dataloader_num_workers: 0
+  dataloader_pin_memory: True
+  save_total_limit: 3
+  fp16: True
+  max_grad_norm: 1.0
+
+wandb:
+  project: 'Enzyme_temperature'
+  run_name: 'range_reda_segment'

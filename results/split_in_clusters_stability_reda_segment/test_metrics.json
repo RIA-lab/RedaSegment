@@ -1,0 +1,11 @@
+{
+    "test_loss": 1.9956274032592773,
+    "test_R2": 0.8782315254211426,
+    "test_Pearson Correlation": 0.9386779974386997,
+    "test_Spearman Correlation": 0.9306302613262376,
+    "test_MAE": 2.9625906944274902,
+    "test_RMSE": 7.549569606781006,
+    "test_runtime": 5.2306,
+    "test_samples_per_second": 65.958,
+    "test_steps_per_second": 0.574
+}

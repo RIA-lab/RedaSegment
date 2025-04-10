@@ -1,0 +1,9 @@
+{
+    "test_loss": 205.1453094482422,
+    "test_mean_overlap_ratio": 0.8635510206222534,
+    "test_mae_low": 4.061469554901123,
+    "test_mae_high": 5.900240421295166,
+    "test_runtime": 2.7677,
+    "test_samples_per_second": 65.759,
+    "test_steps_per_second": 0.723
+}

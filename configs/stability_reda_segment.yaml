@@ -1,0 +1,42 @@
+dataset:
+  name: 'stability'
+  train: 'train.csv'
+  val: 'val.csv'
+  test: 'test.csv'
+
+model:
+  name: 'reda_segment'
+  pretrain_model: 'esm150'
+  database:
+    path_dir: 'data/augmentation_database/stability'
+    file_list:
+      - 'db-45.pt'
+      - 'db45-70.pt'
+      - 'db70-100.pt'
+      - 'db100-.pt'
+  scales: 1
+  segment_lengths:
+    - 8
+    - 4
+  kernel_size: 5
+  attention_range: 5
+  embed_dim: 640
+  num_heads: 8
+  num_layers: 2
+  num_labels: 4
+
+training:
+  lr: 1e-4
+  num_epochs: 64
+  train_batch_size: 128
+  eval_batch_size: 128
+  weight_decay: 1e-4
+  dataloader_num_workers: 0
+  dataloader_pin_memory: True
+  save_total_limit: 3
+  fp16: True
+  max_grad_norm: 1.0
+
+wandb:
+  project: 'Enzyme_temperature'
+  run_name: 'stability_reda_segment'
