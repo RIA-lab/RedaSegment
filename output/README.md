@@ -1,4 +1,4 @@
-Download and put files esm2_t30_150M_UR50D here.
+Download and put files of esm2_t30_150M_UR50D here.
 
 ## ESM-2
 
