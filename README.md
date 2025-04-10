@@ -48,17 +48,17 @@ python preprocess/build_aug_db_stability.py
 
 Train the model for each task using the appropriate config file:
 
-# Optimal temperature prediction
+Optimal temperature
 ```bash
 python train.py --config configs/opt_reda_segment.yaml
  ```
 
-# Temperature range prediction
+Temperature range
 ```bash
 python train.py --config configs/range_reda_segment.yaml
  ```
 
-# Thermal stability prediction
+Thermal stability
 ```bash
 python train.py --config configs/stability_reda_segment.yaml
  ```
