@@ -27,6 +27,7 @@ python inference.py \
   --config configs/stability_reda_segment.yaml \
   --weight output/split_clusters_stability_reda_segment/model.safetensors \
   --file path/to/your/csv/file
+ ```
 
 Replace `path/to/your/csv/file` with the actual path to your CSV input.
 
@@ -41,17 +42,23 @@ Run the following scripts to build the augmentation databases for different ther
 python preprocess/build_aug_db_opt.py
 python preprocess/build_aug_db_range.py
 python preprocess/build_aug_db_stability.py
+ ```
 
 ### Step 2: Train the Model
 
 Train the model for each task using the appropriate config file:
 
-```bash
 # Optimal temperature prediction
+```bash
 python train.py --config configs/opt_reda_segment.yaml
+ ```
 
 # Temperature range prediction
+```bash
 python train.py --config configs/range_reda_segment.yaml
+ ```
 
 # Thermal stability prediction
+```bash
 python train.py --config configs/stability_reda_segment.yaml
+ ```
