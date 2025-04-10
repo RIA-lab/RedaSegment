@@ -1,8 +1,4 @@
----
-license: mit
-widget:
- - text: "MQIFVKTLTGKTITLEVEPS<mask>TIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
----
+Download and put files esm2_t30_150M_UR50D here.
 
 ## ESM-2
 
