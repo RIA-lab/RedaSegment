@@ -1,1 +1,2 @@
 # RedaSegment
+![Architecture](RedaSegment.png)
